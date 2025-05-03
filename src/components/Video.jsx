@@ -50,9 +50,9 @@ const Video = () => {
         <p>
           <span>THE STILL CIRCLE IS A PREMIUM WELLNESS</span>
           <span>PLATFORM THAT CREATES DEEPLY IMMERSIVE</span>
-          <span>EXPERIENCES DESIGNED TO HELP PEOPLE SLOW</span>
-          <span>DOWN, RECONNECT WITH THEMSELVES, AND</span>
-          <span>FIND STILLNESS IN FAST MOVING WORLD</span>
+          <span>EXPERIENCES DESIGNED TO HELP PEOPLE</span>
+          <span>SLOW DOWN, RECONNECT WITH THEMSELVES,</span>
+          <span>AND, FIND STILLNESS IN FAST MOVING WORLD</span>
         </p>
       </div>
     </div>
