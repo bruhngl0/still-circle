@@ -9,7 +9,7 @@ const UserDetail = () => {
     fullName: "",
     email: "",
     phoneNumber: "",
-    age: null, // Default value set to null
+    age: 0, // Default value set to null
     occupation: "Entrepreneur",
     soundHealingExp: "FirstTime",
     waterComfort: "YesAbsolutely",
