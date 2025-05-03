@@ -19,6 +19,7 @@ const UserDetail = () => {
   });
 
   const [loading, setLoading] = useState(false);
+  const navigate = useNavigate();
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -62,7 +63,7 @@ const UserDetail = () => {
 
       if (response.ok) {
         toast.success(data.message);
-        useNavigate("/");
+        navigate("/");
       } else {
         toast.error(data.message || "Failed to submit. Please try again.");
       }
