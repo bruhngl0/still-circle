@@ -1,8 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ensures padding and borders are included in element’s width and height */
+}
+
+/* Make sure body takes up full height */
+html,
+body {
+  height: 100%;
+}
+
 .vid-main {
   position: relative;
   width: 100%;
-  height: 98vh; /* Full viewport height */
+  height: 100vh; /* Full viewport height */
   overflow-y: hidden;
+  margin: 0 auto;
+  padding: 0 auto;
 }
 
 .video-bg {
