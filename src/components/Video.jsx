@@ -58,7 +58,7 @@ const Video = () => {
         </p>
       </div>
       {/* Call to Action Button */}
-      <button className="cta-button">WAIT-LIST</button>
+      <button className="cta-button">JOIN WAIT-LIST</button>
     </div>
   );
 };
