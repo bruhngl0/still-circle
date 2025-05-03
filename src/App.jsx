@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Video from "./components/Video"; // Import your Video component
 import "./App.css";
 import Info from "./components/Info";
+import UserDetail from "./components/UserDetail";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         {/* Define your routes here */}
         <Route path="/" element={<Video />} /> {/* Home page route */}
         <Route path="/info" element={<Info />} /> {/* Experience page route */}
+        <Route path="/userDetail" element={<UserDetail />} />
         {/* Add more routes as needed */}
       </Routes>
     </BrowserRouter>
