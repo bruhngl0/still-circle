@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "san";
+  src: url("../../public//sandeigo.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -29,4 +36,33 @@ body {
   height: 100vh;
   object-fit: cover; /* Ensures the video covers the entire area while maintaining aspect ratio */
   overflow-y: hidden;
+}
+
+.overlay-text {
+  position: relative;
+  top: 18%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #584738;
+  font-size: 16px;
+  text-align: center;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0); /* Semi-transparent black background */
+  width: 100%;
+
+  z-index: 10;
+  font-family: san;
+}
+
+.overlay-text h1 {
+  margin: 0;
+}
+
+.overlay-text p {
+}
+
+.overlay-text p span {
+  display: block;
+  opacity: 1;
+  transform: translateY(50%);
 }
