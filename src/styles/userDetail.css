@@ -41,6 +41,13 @@ label {
 
 input,
 select {
+  appearance: none; /* Removes the default dropdown arrow */
+  -webkit-appearance: none; /* For Safari */
+  -moz-appearance: none; /* For Firefox */
+  background-image: url("your-custom-arrow.svg"); /* Add a custom arrow */
+  background-repeat: no-repeat;
+  background-position: right 10px center; /* Position your custom arrow */
+  padding-right: 30px; /* Adjust for arrow */
   padding: 5px;
   font-size: 16px;
   border: 1px solid #584738;
