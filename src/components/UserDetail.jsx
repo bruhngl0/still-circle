@@ -67,7 +67,7 @@ const UserDetail = () => {
         toast.error(data.message || "Failed to submit. Please try again.");
       }
     } catch (error) {
-      toast.error("An error occurred. Please try again.");
+      console.error("Error submitting form:", error);
     } finally {
       setLoading(false);
     }
