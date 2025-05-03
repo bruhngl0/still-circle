@@ -30,7 +30,7 @@ const UserDetail = () => {
 
     try {
       const response = await fetch(
-        "http://stillcircle.adityashrm500.workers.dev/api/v1/userDetails",
+        "https://stillcircle.adityashrm500.workers.dev/api/v1/userDetails",
         {
           method: "POST",
           headers: {
