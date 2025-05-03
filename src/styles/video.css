@@ -70,7 +70,7 @@ body {
 /* Button styles */
 .cta-button {
   position: absolute;
-  bottom: 80px; /* 30px from the bottom of the screen */
+  bottom: 110px; /* 30px from the bottom of the screen */
   left: 38%;
   transform: translateX(-50%);
   padding: 8px 8px;

@@ -11,7 +11,7 @@ const Video = () => {
     tl.fromTo(
       ".overlay-text p span:nth-child(1)",
       { opacity: 0, y: "50%" },
-      { opacity: 1, y: "0%", duration: 1, delay: 0 }, // First line
+      { opacity: 1, y: "0%", duration: 1, delay: 2 }, // First line
     )
       .fromTo(
         ".overlay-text p span:nth-child(2)",
@@ -37,7 +37,7 @@ const Video = () => {
       .fromTo(
         ".cta-button",
         { opacity: 0, y: "100%" },
-        { opacity: 1, y: "0%", duration: 1, delay: 0.5 }, // Button appears after the last text line
+        { opacity: 1, y: "0%", duration: 1, delay: 0 }, // Button appears after the last text line
       );
   }, []);
 
