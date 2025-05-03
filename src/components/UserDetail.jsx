@@ -2,18 +2,19 @@ import React, { useState } from "react";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "../styles/userDetail.css";
+import { useNavigate } from "react-router-dom";
 
 const UserDetail = () => {
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
     phoneNumber: "",
-    age: "",
-    occupation: "",
-    soundHealingExp: "",
-    waterComfort: "",
-    preferredSession: "",
-    futureJourney: "",
+    age: null, // Default value set to null
+    occupation: "Entrepreneur",
+    soundHealingExp: "FirstTime",
+    waterComfort: "YesAbsolutely",
+    preferredSession: "Sunset",
+    futureJourney: "Yes",
     instagramHandle: "",
   });
 
@@ -21,7 +22,24 @@ const UserDetail = () => {
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
-    setFormData((prevData) => ({ ...prevData, [name]: value }));
+
+    // If age field is being updated, convert the value to a number
+    if (name === "age" && value !== "") {
+      setFormData((prevData) => ({
+        ...prevData,
+        [name]: Number(value), // Convert to number
+      }));
+    } else if (name === "age") {
+      setFormData((prevData) => ({
+        ...prevData,
+        [name]: null, // If value is empty, reset to null
+      }));
+    } else {
+      setFormData((prevData) => ({
+        ...prevData,
+        [name]: value,
+      }));
+    }
   };
 
   const handleSubmit = async (e) => {
@@ -44,6 +62,7 @@ const UserDetail = () => {
 
       if (response.ok) {
         toast.success(data.message);
+        useNavigate("/");
       } else {
         toast.error(data.message || "Failed to submit. Please try again.");
       }
@@ -67,6 +86,7 @@ const UserDetail = () => {
             name="fullName"
             value={formData.fullName}
             onChange={handleInputChange}
+            placeholder="required*"
             required
           />
         </div>
@@ -79,6 +99,7 @@ const UserDetail = () => {
             name="email"
             value={formData.email}
             onChange={handleInputChange}
+            placeholder="required*"
             required
           />
         </div>
@@ -89,6 +110,7 @@ const UserDetail = () => {
             type="tel"
             id="phoneNumber"
             name="phoneNumber"
+            placeholder="required*"
             value={formData.phoneNumber}
             onChange={handleInputChange}
           />
@@ -100,7 +122,8 @@ const UserDetail = () => {
             type="number"
             id="age"
             name="age"
-            value={formData.age}
+            placeholder="optional"
+            value={formData.age || ""} // Display null as empty string
             onChange={handleInputChange}
           />
         </div>
@@ -198,13 +221,14 @@ const UserDetail = () => {
             type="text"
             id="instagramHandle"
             name="instagramHandle"
+            placeholder="optional"
             value={formData.instagramHandle}
             onChange={handleInputChange}
           />
         </div>
 
         <button type="submit" className="submit-btn" disabled={loading}>
-          {loading ? "Submitting..." : "Submit"}
+          {loading ? "Submitting..." : "SUBMIT"}
         </button>
       </form>
     </div>

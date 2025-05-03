@@ -78,8 +78,9 @@ const Info = () => {
             <strong>Pricing:</strong> ₹4,999 per person
           </p>
         </div>
-
-        <button className="info-btn">Join the Waitlist</button>
+        <a href="/userDetail">
+          <button className="info-btn">Join the Waitlist</button>
+        </a>
       </section>
     </div>
   );

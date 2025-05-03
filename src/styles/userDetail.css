@@ -8,16 +8,17 @@
 .user-details-container {
   max-width: 900px;
   margin: 0 auto;
-  background-color: #fff;
+  background-color: #584738;
   padding: 2rem;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  color: white;
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   text-align: center;
-  color: #6a4e3a;
+  color: white;
   margin-bottom: 1.5rem;
 }
 
@@ -33,24 +34,25 @@ form {
 }
 
 label {
-  font-size: 1.1rem;
-  color: #6a4e3a;
+  font-size: 16px;
+  color: #b59e7d;
   margin-bottom: 0.5rem;
 }
 
 input,
 select {
-  padding: 10px;
-  font-size: 1rem;
-  border: 1px solid #ccc;
+  padding: 5px;
+  font-size: 16px;
+  border: 1px solid #584738;
   border-radius: 5px;
+  background-color: #b59e7d;
 }
 
 button.submit-btn {
-  padding: 12px 24px;
+  padding: 10px;
   background-color: #b59e7d;
-  color: white;
-  font-size: 1.2rem;
+  color: #584738;
+  font-size: 16px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
