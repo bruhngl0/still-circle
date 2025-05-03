@@ -33,7 +33,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
-  height: 100vh;
+  height: 100%;
   object-fit: cover; /* Ensures the video covers the entire area while maintaining aspect ratio */
   overflow-y: hidden;
 }
@@ -70,7 +70,7 @@ body {
 /* Button styles */
 .cta-button {
   position: absolute;
-  bottom: 110px; /* 30px from the bottom of the screen */
+  top: 40rem; /* 30px from the bottom of the screen */
   left: 38%;
   transform: translateX(-50%);
   padding: 8px 8px;
@@ -85,6 +85,7 @@ body {
   z-index: 20;
   font-family: san;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Soft shadow */
+  overflow: hidden;
   transition:
     opacity 0.3s ease,
     transform 0.3s ease;
