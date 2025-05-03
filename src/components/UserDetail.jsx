@@ -63,7 +63,6 @@ const UserDetail = () => {
 
       if (response.ok) {
         toast.success(data.message);
-        navigate("/");
       } else {
         toast.error(data.message || "Failed to submit. Please try again.");
       }

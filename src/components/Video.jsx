@@ -58,7 +58,7 @@ const Video = () => {
         </p>
       </div>
       {/* Call to Action Button */}
-      <a href="/info">
+      <a href="/info" style={{ textDecoration: "none" }}>
         <button className="cta-button">CONTINUE</button>
       </a>
     </div>

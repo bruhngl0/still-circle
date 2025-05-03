@@ -78,7 +78,7 @@ const Info = () => {
             <strong>Pricing:</strong> ₹4,999 per person
           </p>
         </div>
-        <a href="/userDetail">
+        <a href="/userDetail" style={{ textDecoration: "none" }}>
           <button className="info-btn">Join the Waitlist</button>
         </a>
       </section>
