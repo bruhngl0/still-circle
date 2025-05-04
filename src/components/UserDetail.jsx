@@ -10,11 +10,11 @@ const UserDetail = () => {
     email: "",
     phoneNumber: "",
     age: 0, // Default value set to null
-    occupation: "Entrepreneur",
-    soundHealingExp: "FirstTime",
-    waterComfort: "YesAbsolutely",
-    preferredSession: "Sunset",
-    futureJourney: "Yes",
+    occupation: "",
+    soundHealingExp: "",
+    waterComfort: "",
+    preferredSession: "",
+    futureJourney: "",
     instagramHandle: "",
   });
 
@@ -76,60 +76,64 @@ const UserDetail = () => {
   return (
     <div className="user-details-container">
       <ToastContainer />
-      <h2>User Details</h2>
       <form onSubmit={handleSubmit} className="user-details-form">
+        <div className="detail-logo-div">
+          <img src="logo31.png" className="detail-logo" />
+        </div>
+        <div className="detail-text">
+          <p className="detail1-text1">Join Waitlist</p>
+          <p className="detail2-text2">
+            Please tell us a bit about yourself so we can review your request to
+            join the waitlist.
+          </p>
+        </div>
         <div className="form-group">
-          <label htmlFor="fullName">Full Name</label>
           <input
             type="text"
             id="fullName"
             name="fullName"
             value={formData.fullName}
             onChange={handleInputChange}
-            placeholder="required*"
+            placeholder="Full Name"
             required
           />
         </div>
 
         <div className="form-group">
-          <label htmlFor="email">Email</label>
           <input
             type="email"
             id="email"
             name="email"
             value={formData.email}
             onChange={handleInputChange}
-            placeholder="required*"
+            placeholder="Email"
             required
           />
         </div>
 
         <div className="form-group">
-          <label htmlFor="phoneNumber">Phone Number</label>
           <input
             type="tel"
             id="phoneNumber"
             name="phoneNumber"
-            placeholder="required*"
+            placeholder="Phone Number"
             value={formData.phoneNumber}
             onChange={handleInputChange}
           />
         </div>
 
         <div className="form-group">
-          <label htmlFor="age">Age</label>
           <input
             type="number"
             id="age"
             name="age"
-            placeholder="optional"
+            placeholder="Age"
             value={formData.age || ""} // Display null as empty string
             onChange={handleInputChange}
           />
         </div>
 
         <div className="form-group">
-          <label htmlFor="occupation">Occupation</label>
           <select
             id="occupation"
             name="occupation"
@@ -137,6 +141,9 @@ const UserDetail = () => {
             onChange={handleInputChange}
             required
           >
+            <option value="" disabled hidden>
+              Which one of the following best describes you?
+            </option>
             <option value="Entrepreneur">Entrepreneur</option>
             <option value="WorkingProfessional">Working Professional</option>
             <option value="Creative">Creative</option>
@@ -150,14 +157,18 @@ const UserDetail = () => {
         </div>
 
         <div className="form-group">
-          <label htmlFor="soundHealingExp">Sound Healing Experience</label>
           <select
             id="soundHealingExp"
+            placeholder="Have you ever experienced sound healing before?"
             name="soundHealingExp"
             value={formData.soundHealingExp}
             onChange={handleInputChange}
             required
           >
+            <option value="" disabled hidden>
+              Have you ever experienced sound healing before?
+            </option>
+
             <option value="YesRegularly">Yes, Regularly</option>
             <option value="OnceOrTwice">Once or Twice</option>
             <option value="NotYetButCurious">Not Yet, But Curious</option>
@@ -166,7 +177,6 @@ const UserDetail = () => {
         </div>
 
         <div className="form-group">
-          <label htmlFor="waterComfort">Water Comfort</label>
           <select
             id="waterComfort"
             name="waterComfort"
@@ -174,6 +184,10 @@ const UserDetail = () => {
             onChange={handleInputChange}
             required
           >
+            <option value="" disabled hidden>
+              Are you comfortable floating in water?
+            </option>
+
             <option value="YesAbsolutely">Yes, Absolutely</option>
             <option value="LoveToTryWithSupport">
               Love to Try with Support
@@ -185,14 +199,17 @@ const UserDetail = () => {
         </div>
 
         <div className="form-group">
-          <label htmlFor="preferredSession">Preferred Session</label>
           <select
             id="preferredSession"
             name="preferredSession"
+            placeholder="Preferred session time?"
             value={formData.preferredSession}
             onChange={handleInputChange}
             required
           >
+            <option value="" disabled hidden>
+              Preferred session time?
+            </option>
             <option value="Sunrise">Sunrise</option>
             <option value="Sunset">Sunset</option>
             <option value="Night">Night</option>
@@ -201,7 +218,6 @@ const UserDetail = () => {
         </div>
 
         <div className="form-group">
-          <label htmlFor="futureJourney">Future Journey</label>
           <select
             id="futureJourney"
             name="futureJourney"
@@ -209,6 +225,9 @@ const UserDetail = () => {
             onChange={handleInputChange}
             required
           >
+            <option value="" disabled hidden>
+              Would you like to be a part of future Still Circle journeys?
+            </option>
             <option value="Yes">Yes</option>
             <option value="OnlyForThisSession">Only for This Session</option>
             <option value="NotAtTheMoment">Not at the Moment</option>
@@ -216,12 +235,11 @@ const UserDetail = () => {
         </div>
 
         <div className="form-group">
-          <label htmlFor="instagramHandle">Instagram Handle</label>
           <input
             type="text"
             id="instagramHandle"
             name="instagramHandle"
-            placeholder="optional"
+            placeholder="Instagram Handle"
             value={formData.instagramHandle}
             onChange={handleInputChange}
           />
