@@ -81,7 +81,7 @@ const UserDetail = () => {
           <img src="logo31.png" className="detail-logo" />
         </div>
         <div className="detail-text">
-          <p className="detail1-text1">Join Waitlist</p>
+          <p className="detail1-text1">Join Waitlist.</p>
           <p className="detail2-text2">
             Please tell us a bit about yourself so we can review your request to
             join the waitlist.
@@ -226,7 +226,7 @@ const UserDetail = () => {
             required
           >
             <option value="" disabled hidden>
-              Would you like to be a part of future Still Circle journeys?
+              Would you like to be a part of future Still Circle events?
             </option>
             <option value="Yes">Yes</option>
             <option value="OnlyForThisSession">Only for This Session</option>

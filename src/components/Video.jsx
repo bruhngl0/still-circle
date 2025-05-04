@@ -23,23 +23,8 @@ const Video = () => {
         ".overlay-text p span:nth-child(3)",
         { opacity: 0, y: "50%" },
         { opacity: 1, y: "0%", duration: 1, delay: 1 }, // Third line, appears at 4 seconds
-      )
-      .fromTo(
-        ".overlay-text p span:nth-child(4)",
-        { opacity: 0, y: "50%" },
-        { opacity: 1, y: "0%", duration: 1, delay: 1 }, // Fourth line, appears at 6 seconds
-      )
-      .fromTo(
-        ".overlay-text p span:nth-child(5)",
-        { opacity: 0, y: "50%" },
-        { opacity: 1, y: "0%", duration: 1, delay: 1 }, // Fifth line, appears at 8 seconds
-      )
-      // Button animation after the 4th text line finishes
-      .fromTo(
-        ".cta-button",
-        { opacity: 0, y: "100%" },
-        { opacity: 1, y: "0%", duration: 1, delay: 0 }, // Button appears after the last text line
       );
+    // Button animation after the 4th text line finishes
   }, []);
 
   return (
@@ -50,19 +35,18 @@ const Video = () => {
           Your browser does not support the video tag.
         </video>
         {/* Overlay Text */}
+
         <div className="overlay-text">
           <p>
-            <span>THE STILL CIRCLE IS A PREMIUM WELLNESS</span>
-            <span>PLATFORM THAT CREATES DEEPLY IMMERSIVE</span>
-            <span>EXPERIENCES DESIGNED TO HELP PEOPLE</span>
-            <span>SLOW DOWN, RECONNECT WITH THEMSELVES,</span>
-            <span>AND, FIND STILLNESS IN FAST MOVING WORLD.</span>
+            <span>A SPACE TO SLOW DOWN,</span>
+            <span>RECONNECT & DISCOVER</span>
+            <span>YOURSELF.</span>
           </p>
         </div>
         {/* Call to Action Button */}
-        <a href="/info" style={{ textDecoration: "none" }}>
-          <button className="cta-button">CONTINUE</button>
-        </a>
+        <div className="icon-main">
+          <img src="icon.png" style={{ width: "40px" }} />
+        </div>
       </div>
       <div>
         <Info />
