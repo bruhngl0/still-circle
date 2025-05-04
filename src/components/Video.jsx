@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { gsap } from "gsap";
 import "../styles/video.css";
+import Info from "./Info";
 
 const Video = () => {
   useEffect(() => {
@@ -42,26 +43,31 @@ const Video = () => {
   }, []);
 
   return (
-    <div className="vid-main">
-      <video className="video-bg" playsInline loop autoPlay muted>
-        <source src="stillCircle.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-      {/* Overlay Text */}
-      <div className="overlay-text">
-        <p>
-          <span>THE STILL CIRCLE IS A PREMIUM WELLNESS</span>
-          <span>PLATFORM THAT CREATES DEEPLY IMMERSIVE</span>
-          <span>EXPERIENCES DESIGNED TO HELP PEOPLE</span>
-          <span>SLOW DOWN, RECONNECT WITH THEMSELVES,</span>
-          <span>AND, FIND STILLNESS IN FAST MOVING WORLD.</span>
-        </p>
+    <>
+      <div className="vid-main">
+        <video className="video-bg" playsInline loop autoPlay muted>
+          <source src="stillCircle.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        {/* Overlay Text */}
+        <div className="overlay-text">
+          <p>
+            <span>THE STILL CIRCLE IS A PREMIUM WELLNESS</span>
+            <span>PLATFORM THAT CREATES DEEPLY IMMERSIVE</span>
+            <span>EXPERIENCES DESIGNED TO HELP PEOPLE</span>
+            <span>SLOW DOWN, RECONNECT WITH THEMSELVES,</span>
+            <span>AND, FIND STILLNESS IN FAST MOVING WORLD.</span>
+          </p>
+        </div>
+        {/* Call to Action Button */}
+        <a href="/info" style={{ textDecoration: "none" }}>
+          <button className="cta-button">CONTINUE</button>
+        </a>
       </div>
-      {/* Call to Action Button */}
-      <a href="/info" style={{ textDecoration: "none" }}>
-        <button className="cta-button">CONTINUE</button>
-      </a>
-    </div>
+      <div>
+        <Info />
+      </div>
+    </>
   );
 };
 
