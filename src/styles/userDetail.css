@@ -45,6 +45,7 @@ input,
 select {
   padding: 10px;
   font-size: 10px;
+  height: 35px;
   border: 1px solid #584738;
   border-radius: 5px;
   background-color: #584738;
