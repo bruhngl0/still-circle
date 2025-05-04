@@ -46,28 +46,18 @@ const Info = () => {
       {/* Event Details Section */}
       <section className="event-details">
         <h3>Event Details</h3>
-        <ul>
-          <li>
-            <strong>Inclusions:</strong> 15-minute guided introduction to the
-            practice and its benefits
-          </li>
-          <li>45-minute floating sound healing session in the pool</li>
-          <li>A nourishing, chef-curated 5-course vegetarian meal</li>
-          <li>
-            A mindful journey designed to restore, recharge, and reconnect
-          </li>
-        </ul>
-
         <div className="venue-details">
-          <p>
-            <strong>Venue:</strong> Spice Terrace, JW Marriott Bangalore
-          </p>
           <p>
             <strong>Date:</strong> Sunday, 25th May 2025
           </p>
           <p>
             <strong>Time:</strong> 5:30 PM – 7:30 PM
           </p>
+
+          <p>
+            <strong>Venue:</strong> Spice Terrace, JW Marriott Bangalore.
+          </p>
+
           <p>
             <strong>Instructor:</strong> Iti Jain
           </p>
@@ -78,6 +68,18 @@ const Info = () => {
             <strong>Pricing:</strong> ₹4,999 per person
           </p>
         </div>
+        <br /> <br />
+        <ul>
+          <strong>Inclusions:</strong>
+          <li>
+            15-minute guided introduction to the practice and its benefits.
+          </li>
+          <li>45-minute floating sound healing session in the pool.</li>
+          <li>A nourishing, chef-curated 5-course vegetarian meal.</li>
+          <li>
+            A mindful journey designed to restore, recharge, and reconnect.
+          </li>
+        </ul>
         <a href="/userDetail" style={{ textDecoration: "none" }}>
           <button className="info-btn">Join the Waitlist</button>
         </a>

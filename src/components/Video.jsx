@@ -12,17 +12,17 @@ const Video = () => {
     tl.fromTo(
       ".overlay-text p span:nth-child(1)",
       { opacity: 0, y: "50%" },
-      { opacity: 1, y: "0%", duration: 1, delay: 2 }, // First line
+      { opacity: 1, y: "0%", duration: 0.5, delay: 1 }, // First line
     )
       .fromTo(
         ".overlay-text p span:nth-child(2)",
         { opacity: 0, y: "50%" },
-        { opacity: 1, y: "0%", duration: 1, delay: 1 }, // Second line, appears at 2 seconds
+        { opacity: 1, y: "0%", duration: 0.5, delay: 0.5 }, // Second line, appears at 2 seconds
       )
       .fromTo(
         ".overlay-text p span:nth-child(3)",
         { opacity: 0, y: "50%" },
-        { opacity: 1, y: "0%", duration: 1, delay: 1 }, // Third line, appears at 4 seconds
+        { opacity: 1, y: "0%", duration: 0.5, delay: 0.5 }, // Third line, appears at 4 seconds
       );
     // Button animation after the 4th text line finishes
   }, []);
@@ -45,7 +45,12 @@ const Video = () => {
         </div>
         {/* Call to Action Button */}
         <div className="icon-main">
-          <img src="icon.png" style={{ width: "40px" }} />
+          <img
+            src="icon.png"
+            style={{
+              width: "40px",
+            }}
+          />
         </div>
       </div>
       <div>
