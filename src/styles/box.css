@@ -1,15 +1,15 @@
 .box {
   position: absolute;
-  top: 93%;
+  top: 85%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #f7e5cb;
+
   > span {
     display: block;
     width: 12px;
     height: 12px;
-    border-bottom: 4px solid #b5d782;
-    border-right: 4px solid #f1eada;
+    border-bottom: 4px solid #f1eada;
+    border-right: 4px solid #584738;
     transform: rotate(45deg);
     margin: -10px;
     animation: animate 2s infinite;
