@@ -9,7 +9,7 @@
     width: 12px;
     height: 12px;
     border-bottom: 4px solid #f1eada;
-    border-right: 4px solid #584738;
+    border-right: 4px solid #f1eada;
     transform: rotate(45deg);
     margin: -10px;
     animation: animate 2s infinite;
