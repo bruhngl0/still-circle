@@ -75,7 +75,7 @@ const Info = () => {
             15-minute guided introduction to the practice and its benefits.
           </li>
           <li>45-minute floating sound healing session in the pool.</li>
-          <li>A nourishing, chef-curated 5-course vegetarian meal.</li>
+          <li>A nourishing, chef-curated 5-course vegan meal.</li>
           <li>
             A mindful journey designed to restore, recharge, and reconnect.
           </li>
