@@ -79,7 +79,12 @@ const Info = () => {
           <li>
             A mindful journey designed to restore, recharge, and reconnect.
           </li>
+          <li>
+            A complimentary athleisure outfit by CAVA.
+          </li>
         </ul>
+
+        <p>Note: If you'd like to experience the session as a couple, drop us a message on our instagram stating same!</p>
         <a href="/userDetail" style={{ textDecoration: "none" }}>
           <button className="info-btn">Join the Waitlist</button>
         </a>
