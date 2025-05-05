@@ -5,6 +5,13 @@
   font-style: normal;
 }
 
+.user-detail-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .user-details-container {
   max-width: 900px;
   margin: 0 auto;
@@ -45,7 +52,7 @@ input,
 select {
   padding: 10px;
   font-size: 12px;
-  height: 35px;
+  height: 45px;
   border: 1px solid #584738;
   border-radius: 5px;
   background-color: #584738;
@@ -68,15 +75,23 @@ input::placeholder {
   color: #b59e7d; /* Change placeholder color */
 }
 
+.user-btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 button.submit-btn {
   padding: 10px;
-  background-color: #584738;
-  color: #b59e7d;
-  font-size: 10px;
+  background-color: #f1eada;
+  color: #584738;
+  font-size: 14px;
   border: none;
-  border-radius: 5px;
+  border-radius: 50px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  height: 45px;
+  width: 60%;
 }
 
 button.submit-btn:hover {

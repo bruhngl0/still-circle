@@ -4,6 +4,7 @@ import Video from "./components/Video"; // Import your Video component
 import "./App.css";
 import Info from "./components/Info";
 import UserDetail from "./components/UserDetail";
+import Thankyou from "./components/Thankyou";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/" element={<Video />} /> {/* Home page route */}
         <Route path="/info" element={<Info />} /> {/* Experience page route */}
         <Route path="/userDetail" element={<UserDetail />} />
+        <Route path="/contact" element={<Thankyou />} />
         {/* Add more routes as needed */}
       </Routes>
     </BrowserRouter>

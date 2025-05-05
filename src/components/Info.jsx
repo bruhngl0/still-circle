@@ -70,7 +70,7 @@ const Info = () => {
         </div>
         <br /> <br />
         <ul>
-          <strong>Inclusions:</strong>
+          <strong style={{ fontWeight: "800" }}>Inclusions:</strong>
           <li>
             15-minute guided introduction to the practice and its benefits.
           </li>

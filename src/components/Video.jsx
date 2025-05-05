@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { gsap } from "gsap";
 import "../styles/video.css";
 import Info from "./Info";
+import Socials from "./Socials";
 
 const Video = () => {
   useEffect(() => {
@@ -55,6 +56,13 @@ const Video = () => {
       </div>
       <div>
         <Info />
+      </div>
+
+      <div>
+        <Socials />
+        <div className="tq-cpright">
+          <p>©2025, stillcircle.com</p>
+        </div>
       </div>
     </>
   );
