@@ -23,7 +23,9 @@ const Thankyou = () => {
       </div>
 
       <div className="tq-cpright">
-        <p>©2025, stillcircle.com</p>
+        <p>©2025</p>
+
+        <p>stillcircle.com</p>
       </div>
     </div>
   );

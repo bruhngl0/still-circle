@@ -36,12 +36,14 @@
 }
 
 .tq-cpright {
-  margin-top: 2rem;
+  margin-top: 1rem;
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   padding: 10px;
-
+  height: 80px;
   color: #f1eada;
   > p {
     font-size: 10px;

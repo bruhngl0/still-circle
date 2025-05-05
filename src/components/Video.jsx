@@ -3,6 +3,7 @@ import { gsap } from "gsap";
 import "../styles/video.css";
 import Info from "./Info";
 import Socials from "./Socials";
+import Box from "./Box";
 
 const Video = () => {
   useEffect(() => {
@@ -45,6 +46,8 @@ const Video = () => {
           </p>
         </div>
         {/* Call to Action Button */}
+
+        <Box />
         <div className="icon-main">
           <img
             src="icon.png"
@@ -61,7 +64,8 @@ const Video = () => {
       <div>
         <Socials />
         <div className="tq-cpright">
-          <p>©2025, stillcircle.com</p>
+          <p>©2025</p>
+          <p>stillcircle.com</p>
         </div>
       </div>
     </>
