@@ -84,7 +84,7 @@ const Info = () => {
           </li>
         </ul>
 
-        <p>Note: If you'd like to experience the session as a couple, drop us a message on our instagram stating same!</p>
+       
         <a href="/userDetail" style={{ textDecoration: "none" }}>
           <button className="info-btn">Join the Waitlist</button>
         </a>
