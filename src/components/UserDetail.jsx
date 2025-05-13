@@ -214,10 +214,13 @@ const UserDetail = () => {
               <option value="" disabled hidden>
                 Preferred session time?
               </option>
-              <option value="Sunrise">Sunrise</option>
-              <option value="Sunset">Sunset</option>
-              <option value="Night">Night</option>
-              <option value="Flexible">Flexible</option>
+              <option value="Sunset" disabled>
+                Sunset Session - (Sold - Out)
+              </option>
+              <option value="Night">
+                {" "}
+                Stargazing Session - (7:30 PM - 9:30 PM){" "}
+              </option>
             </select>
           </div>
 
