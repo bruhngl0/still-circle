@@ -83,7 +83,6 @@ const Info = () => {
           <li>
             A mindful journey designed to restore, recharge, and reconnect.
           </li>
-          <li>A complimentary athleisure outfit by CAVA.</li>
         </ul>
         <a href="/userDetail" style={{ textDecoration: "none" }}>
           <button className="info-btn">Join the Waitlist</button>
