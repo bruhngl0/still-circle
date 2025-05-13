@@ -51,11 +51,11 @@ const Info = () => {
             <strong>Date:</strong> Sunday, 25th May 2025
           </p>
           <p>
-            <strong>Session 1:</strong> Sunset -(5:30 PM - 7:30 PM)
+            <strong>Session 1 -</strong> Sunset - (5:30 PM - 7:30 PM)
           </p>
 
           <p>
-            <strong>Session 2:</strong> Stargazing -(7:30 PM - 9:30 PM)
+            <strong>Session 2 -</strong> Stargazing - (7:30 PM - 9:30 PM)
           </p>
 
           <p>
