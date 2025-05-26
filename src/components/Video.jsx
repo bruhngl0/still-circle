@@ -50,7 +50,7 @@ const Video = () => {
         <Box />
         <div className="icon-main">
           <img
-            src="icon.png"
+            src="tq1-logo.png"
             style={{
               width: "40px",
             }}
