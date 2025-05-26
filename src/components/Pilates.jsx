@@ -14,7 +14,7 @@ const Pilates = () => {
     fitnessLevel: "",
     donePopPilates: "",
     caffeineSensitive: "",
-    excitementReason: "",
+    excitementReason: "null",
     wantsUpdates: "",
     instagramHandle: "",
   });
@@ -217,17 +217,6 @@ const Pilates = () => {
               <option value="NO">No</option>
               <option value="NOT_SURE">Not Sure</option>
             </select>
-          </div>
-
-          <div className="form-group">
-            <input
-              id="excitementReason"
-              name="excitementReason"
-              value={formData.excitementReason}
-              onChange={handleInputChange}
-              placeholder="What excites you most about this event?"
-              required
-            ></input>
           </div>
 
           <div className="form-group">
