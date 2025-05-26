@@ -5,6 +5,7 @@ import "./App.css";
 import Info from "./components/Info";
 import UserDetail from "./components/UserDetail";
 import Thankyou from "./components/Thankyou";
+import Pilates from "./components/Pilates";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/info" element={<Info />} /> {/* Experience page route */}
         <Route path="/userDetail" element={<UserDetail />} />
         <Route path="/contact" element={<Thankyou />} />
+        <Route path="/userDetail2" element={<Pilates />} />
         {/* Add more routes as needed */}
       </Routes>
     </BrowserRouter>

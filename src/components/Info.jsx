@@ -34,12 +34,16 @@ const Info = () => {
     <div className="experience-page">
       {/* Floating Sound Immersion Section */}
       <section className="experience-section">
-        <h2 className="experience-title">Floating Sound Immersion</h2>
+        <h2 className="experience-title">
+          Pop & Pour: Pilates + Unlimited Matcha
+        </h2>
         <p className="experience-description">
-          Let your body float. Let the sound guide your breath and mind. This
-          practice blends water and vibration to ease tension, calm the nervous
-          system, and bring you back to yourself. It’s not just a session, it’s
-          a quiet reset, held in stillness.
+          Start your Sunday on a high note. This energising Pop Pilates session
+          blends rhythmic movement and music to awaken your body and elevate
+          your mood. After the workout, ease into calm with unlimited
+          matcha-based drinks, all set in the lush surrounds of Bastian Garden
+          City. A feel-good morning that flows from dynamic energy to quiet
+          indulgence.
         </p>
       </section>
 
@@ -48,43 +52,34 @@ const Info = () => {
         <h3>Event Details</h3>
         <div className="venue-details">
           <p>
-            <strong>Date:</strong> Sunday, 25th May 2025
+            <strong>Date:</strong> Sunday, 8th June 2025
           </p>
           <p>
-            <strong>Session 1 -</strong> Sunset - (5:30 PM - 7:30 PM)
-          </p>
-
-          <p>
-            <strong>Session 2 -</strong> Stargazing - (7:30 PM - 9:30 PM)
+            <strong>Time: -</strong> 8:30 AM onwards
           </p>
 
           <p>
-            <strong>Venue:</strong> Spice Terrace, JW Marriott Bangalore.
+            <strong>Venue:</strong> Bastian, Garden City, Bangalore.
           </p>
 
           <p>
-            <strong>Instructor:</strong> Iti Jain
+            <strong>Instructor:</strong> Pihu Verma
           </p>
           <p>
-            <strong>Host:</strong> Anmol Bajaj
-          </p>
-          <p>
-            <strong>Pricing:</strong> ₹4,999 per person
+            <strong>Pricing:</strong> ₹2,499 per person
           </p>
         </div>
         <br /> <br />
         <ul>
           <strong style={{ fontWeight: "800" }}>Inclusions:</strong>
+          <li>45-minute Pop Pilates session led by a certified instructor</li>
+          <li>Unlimited matcha-based beverages</li>
+          <li>Curated unwind experience post-workout</li>
           <li>
-            15-minute guided introduction to the practice and its benefits.
-          </li>
-          <li>45-minute floating sound healing session in the pool.</li>
-          <li>A nourishing, chef-curated 5-course vegan meal.</li>
-          <li>
-            A mindful journey designed to restore, recharge, and reconnect.
+            A thoughtfully designed morning to recharge, connect, and glow
           </li>
         </ul>
-        <a href="/userDetail" style={{ textDecoration: "none" }}>
+        <a href="/userDetail2" style={{ textDecoration: "none" }}>
           <button className="info-btn">Join the Waitlist</button>
         </a>
       </section>
