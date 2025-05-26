@@ -34,9 +34,7 @@ const Info = () => {
     <div className="experience-page">
       {/* Floating Sound Immersion Section */}
       <section className="experience-section">
-        <h2 className="experience-title">
-          Pop & Pour: Pilates + Unlimited Matcha
-        </h2>
+        <h2 className="experience-title">Pop & Pour: Pop Pilates</h2>
         <p className="experience-description">
           Start your Sunday on a high note. This energising Pop Pilates session
           blends rhythmic movement and music to awaken your body and elevate
@@ -55,7 +53,7 @@ const Info = () => {
             <strong>Date:</strong> Sunday, 8th June 2025
           </p>
           <p>
-            <strong>Time: -</strong> 8:30 AM onwards
+            <strong>Time: -</strong> 8:00 AM onwards
           </p>
 
           <p>
@@ -63,7 +61,7 @@ const Info = () => {
           </p>
 
           <p>
-            <strong>Instructor:</strong> Pihu Verma
+            <strong>Instructor:</strong> Tanvi Vijay
           </p>
           <p>
             <strong>Pricing:</strong> ₹2,499 per person

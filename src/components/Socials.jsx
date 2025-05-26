@@ -1,6 +1,7 @@
 import React from "react";
 import { FaPhoneAlt, FaInstagram } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import { MdWhatsapp } from "react-icons/md";
 
 const Socials = () => {
   return (
@@ -40,6 +41,15 @@ const Socials = () => {
         title="Instagram"
       >
         <FaInstagram size={30} color="#f1eada" />
+      </a>
+
+      <a
+        href="https://chat.whatsapp.com/EYVe4jXsFwF6WdAQGgNxg7"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="Instagram"
+      >
+        <MdWhatsapp size={30} color="#f1eada" />
       </a>
     </div>
   );

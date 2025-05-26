@@ -252,7 +252,7 @@ const Pilates = () => {
               type="text"
               id="instagramHandle"
               name="instagramHandle"
-              placeholder="Instagram Handle"
+              placeholder="Instagram/Linkedin"
               value={formData.instagramHandle}
               onChange={handleInputChange}
               required
