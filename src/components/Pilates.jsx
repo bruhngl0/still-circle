@@ -122,6 +122,7 @@ const Pilates = () => {
               placeholder="Phone Number"
               value={formData.phoneNumber}
               onChange={handleInputChange}
+              required
             />
           </div>
 
@@ -133,6 +134,7 @@ const Pilates = () => {
               placeholder="Age"
               value={formData.age || ""} // Display null as empty string
               onChange={handleInputChange}
+              required
             />
           </div>
 
