@@ -36,6 +36,13 @@ const Pilates = () => {
         ...prevData,
         [name]: null, // If value is empty, reset to null
       }));
+    } else if (name === "phoneNumber") {
+      // Remove all non-digit characters
+      const digitsOnly = value.replace(/\D/g, "");
+      setFormData((prevData) => ({
+        ...prevData,
+        [name]: digitsOnly,
+      }));
     } else {
       setFormData((prevData) => ({
         ...prevData,
@@ -119,8 +126,10 @@ const Pilates = () => {
               type="tel"
               id="phoneNumber"
               name="phoneNumber"
-              placeholder="Phone Number- eg (9419112345) "
+              placeholder="Phone Number- eg (9419112345)"
               value={formData.phoneNumber}
+              inputMode="numeric" // mobile numeric keypad
+              pattern="[0-9]*" // numeric input pattern
               onChange={handleInputChange}
               required
             />
@@ -243,7 +252,7 @@ const Pilates = () => {
               type="text"
               id="instagramHandle"
               name="instagramHandle"
-              placeholder="Instagram/Linkedin"
+              placeholder="Instagram Handle"
               value={formData.instagramHandle}
               onChange={handleInputChange}
               required
