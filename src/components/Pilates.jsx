@@ -119,7 +119,7 @@ const Pilates = () => {
               type="tel"
               id="phoneNumber"
               name="phoneNumber"
-              placeholder="Phone Number"
+              placeholder="Phone Number- eg (9419112345) "
               value={formData.phoneNumber}
               onChange={handleInputChange}
               required
