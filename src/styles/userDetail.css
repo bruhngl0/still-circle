@@ -115,6 +115,7 @@ button.submit-btn:disabled {
   width: 10rem;
 
   left: 50%;
+  top: 20%;
 }
 
 detail-text {

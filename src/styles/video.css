@@ -82,7 +82,7 @@ body {
   flex-direction: row;
   justify-content: center;
   position: relative;
-  top: 0; /* 30px from the bottom of the screen */
+  top: 7%; /* 30px from the bottom of the screen */
   left: 50%;
   transform: translateX(-50%);
 
