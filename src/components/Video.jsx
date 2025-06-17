@@ -32,17 +32,17 @@ const Video = () => {
   return (
     <>
       <div className="vid-main">
-        <video className="video-bg" playsInline loop autoPlay muted>
-          <source src="stillCircle2.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
         {/* Overlay Text */}
+
+        <div className="video-bg">
+          <img src="yoga.png" />
+        </div>
 
         <div className="overlay-text">
           <p>
-            <span>A SPACE TO SLOW DOWN,</span>
-            <span>RECONNECT & DISCOVER</span>
-            <span>YOURSELF.</span>
+            <span></span>
+            <span></span>
+            <span></span>
           </p>
         </div>
         {/* Call to Action Button */}

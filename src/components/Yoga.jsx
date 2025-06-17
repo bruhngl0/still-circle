@@ -4,17 +4,17 @@ import "react-toastify/dist/ReactToastify.css";
 import "../styles/userDetail.css";
 import { useNavigate } from "react-router-dom";
 
-const UserDetail = () => {
+const Yoga = () => {
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
     phoneNumber: "",
     age: 0, // Default value set to null
-    occupation: "",
-    soundHealingExp: "",
-    waterComfort: "",
-    preferredSession: "",
-    futureJourney: "",
+    personaType: "",
+    yogaExperience: "",
+    intention: "",
+    aromaSensitivity: "",
+    wantsUpdates: "",
     instagramHandle: "",
   });
 
@@ -35,6 +35,13 @@ const UserDetail = () => {
         ...prevData,
         [name]: null, // If value is empty, reset to null
       }));
+    } else if (name === "phoneNumber") {
+      // Remove all non-digit characters
+      const digitsOnly = value.replace(/\D/g, "");
+      setFormData((prevData) => ({
+        ...prevData,
+        [name]: digitsOnly,
+      }));
     } else {
       setFormData((prevData) => ({
         ...prevData,
@@ -49,7 +56,7 @@ const UserDetail = () => {
 
     try {
       const response = await fetch(
-        "https://stillcircle.adityashrm500.workers.dev/api/v1/userDetail",
+        "https://stillcircle.adityashrm500.workers.dev/api/v1/yoga-event",
         {
           method: "POST",
           headers: {
@@ -118,8 +125,10 @@ const UserDetail = () => {
               type="tel"
               id="phoneNumber"
               name="phoneNumber"
-              placeholder="Phone Number"
+              placeholder="Phone Number- eg (9419112345)"
               value={formData.phoneNumber}
+              inputMode="numeric" // mobile numeric keypad
+              pattern="[0-9]*" // numeric input pattern
               onChange={handleInputChange}
               required
             />
@@ -139,107 +148,106 @@ const UserDetail = () => {
 
           <div className="form-group">
             <select
-              id="occupation"
-              name="occupation"
-              value={formData.occupation}
+              id="personaType"
+              name="personaType"
+              value={formData.personaType}
               onChange={handleInputChange}
               required
             >
               <option value="" disabled hidden>
                 How would you describe yourself?
               </option>
-              <option value="Entrepreneur">Entrepreneur</option>
-              <option value="WorkingProfessional">Working Professional</option>
-              <option value="Creative">Creative</option>
-              <option value="WellnessPractitioner">
+              <option value="ENTREPRENEUR_FOUNDER">
+                Entrepreneur / Founder
+              </option>
+              <option value="WORKING_PROFESSIONAL">Working Professional</option>
+              <option value="CREATIVE_ARTIST">Creative / Artist</option>
+              <option value="WELLNESS_PRACTITIONER">
                 Wellness Practitioner
               </option>
-              <option value="Student">Student</option>
-              <option value="Athlete">Athlete</option>
-              <option value="Homemaker">Homemaker</option>
-              <option value="Exploring">Exploring</option>
-              <option value="Other">Other</option>
+              <option value="STUDENT">Student</option>
+              <option value="ATHLETE_SPORTSPERSON">
+                Athlete / Sportsperson / Fitness Enthusiast
+              </option>
+              <option value="HOMEMAKER">Homemaker</option>
+              <option value="EXPLORING">Exploring</option>
+              <option value="OTHER">Other</option>
             </select>
           </div>
 
           <div className="form-group">
             <select
-              id="soundHealingExp"
-              placeholder="Have you ever experienced sound healing before?"
-              name="soundHealingExp"
-              value={formData.soundHealingExp}
+              id="yogaExperience"
+              placeholder="How would you describe your relationship with yoga?"
+              name="yogaExperience"
+              value={formData.yogaExperience}
               onChange={handleInputChange}
               required
             >
               <option value="" disabled hidden>
-                Have you ever experienced sound healing before?
+                How would you describe your relationship with yoga?
               </option>
 
-              <option value="YesRegularly">Yes, Regularly</option>
-              <option value="OnceOrTwice">Once or Twice</option>
-              <option value="NotYetButCurious">Not Yet, But Curious</option>
-              <option value="FirstTime">First Time</option>
+              <option value="NEW_TO_YOGA">New To Yoga</option>
+              <option value="OCCASIONAL_PRACTICE">Occasional Practice</option>
+              <option value="REGULAR_PRACTICE">Regular Practice</option>
             </select>
           </div>
 
           <div className="form-group">
             <select
-              id="waterComfort"
-              name="waterComfort"
-              value={formData.waterComfort}
+              id="intention"
+              name="intention"
+              value={formData.intention}
               onChange={handleInputChange}
               required
             >
               <option value="" disabled hidden>
-                Are you comfortable floating in water?
+                What are you hoping to receive from this experience?
               </option>
 
-              <option value="YesAbsolutely">Yes, Absolutely</option>
-              <option value="LoveToTryWithSupport">
-                Love to Try with Support
+              <option value="DEEP_CALM">A deep sense of calm</option>
+              <option value="BREAK_FROM_ROUTINE">A break from routine</option>
+              <option value="SENSORY_EXPLORATION">Sensory exploration</option>
+              <option value="GROUNDING_MINDFULNESS">
+                Grounding and mindfulness
               </option>
-              <option value="PreferGroundingSoundJourneys">
-                Prefer Grounding Sound Journeys
-              </option>
+              <option value="SOMETHING_DIFFERENT">Something different</option>
             </select>
           </div>
 
           <div className="form-group">
             <select
-              id="preferredSession"
-              name="preferredSession"
-              placeholder="Preferred session time?"
-              value={formData.preferredSession}
+              id="aromaSensitivity"
+              name="aromaSensitivity"
+              placeholder="Are you sensitive to aroma or essential oils?"
+              value={formData.aromaSensitivity}
               onChange={handleInputChange}
               required
             >
               <option value="" disabled hidden>
-                Preferred session time?
+                Are you sensitive to aromas or essential oils?
               </option>
-              <option value="Sunset" disabled>
-                Sunset Session - (Sold - Out)
-              </option>
-              <option value="Night">
-                {" "}
-                Stargazing Session - (7:30 PM - 9:30 PM){" "}
-              </option>
+              <option value="YES">Yes</option>
+              <option value="NO">No</option>
+              <option value="NOT_SURE">Not Sure</option>
             </select>
           </div>
 
           <div className="form-group">
             <select
-              id="futureJourney"
-              name="futureJourney"
-              value={formData.futureJourney}
+              id="wantsUpdates"
+              name="wantsUpdates"
+              placeholder="Want updates on future Still Circle experiences?"
+              value={formData.wantsUpdates}
               onChange={handleInputChange}
               required
             >
               <option value="" disabled hidden>
                 Want updates on future Still Circle experiences?
               </option>
-              <option value="Yes">Yes</option>
-              <option value="OnlyForThisSession">Only for This Session</option>
-              <option value="NotAtTheMoment">Not at the Moment</option>
+              <option value="YES">Yes</option>
+              <option value="NO">No</option>
             </select>
           </div>
 
@@ -251,6 +259,7 @@ const UserDetail = () => {
               placeholder="Instagram Handle"
               value={formData.instagramHandle}
               onChange={handleInputChange}
+              required
             />
           </div>
           <div className="user-btn">
@@ -264,4 +273,4 @@ const UserDetail = () => {
   );
 };
 
-export default UserDetail;
+export default Yoga;

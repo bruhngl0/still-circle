@@ -34,13 +34,20 @@ const Info = () => {
     <div className="experience-page">
       {/* Floating Sound Immersion Section */}
       <section className="experience-section">
-        <h2 className="experience-title">Pop & Pour: Pop Pilates + Matcha</h2>
+        <h2 className="experience-title">Sensory Circle </h2>
+
         <p className="experience-description">
-          Start your Sunday on a high note. This energising Pop Pilates session
-          blends rhythmic movement and music to awaken your body and elevate
-          your mood. After the workout, ease into calm with matcha-based drinks,
-          all set in the lush surrounds of Bastian Garden City. A feel-good
-          morning that flows from dynamic energy to quiet indulgence.
+          A quiet journey through the senses. <br />
+          An experience designed to awaken what often goes unnoticed.
+          <br />
+          Guided by light, scent, sound, and movement, this is yoga that goes
+          beyond the physical.
+          <br />
+          Held in the peaceful surrounds of Sabha, Sensory Circle invites you to
+          tune in, feel more, and move with quiet intention.
+          <br />
+          Leave with a softer body, a quieter mind, and a sense that something
+          has gently shifted.
         </p>
       </section>
 
@@ -49,37 +56,21 @@ const Info = () => {
         <h3>Event Details</h3>
         <div className="venue-details">
           <p>
-            <strong>Date:</strong> Sunday, 8th June 2025
+            <strong>Date:</strong> Sunday, 29nd June 2025
           </p>
           <p>
-            <strong>Time: -</strong> 8:00 AM onwards
-          </p>
-
-          <p>
-            <strong>Venue:</strong> Bastian, Garden City, Bangalore.
+            <strong>Time: -</strong> 6:00 PM to 8:30 PM
           </p>
 
           <p>
-            <strong>Instructor:</strong> Tanvi Vijay
+            <strong>Venue:</strong> Sabha, Bangalore.
           </p>
           <p>
-            <strong>Pricing:</strong> ₹2,999 per person
+            <strong>Price:</strong> ₹3,500 per person
           </p>
         </div>
         <br /> <br />
-        <ul>
-          <strong style={{ fontWeight: "800" }}>Inclusions:</strong>
-          <li>60-minute Pop Pilates session led by a certified instructor</li>
-          <li>Unlimited matcha-based beverages</li>
-          <li>Curated unwind experience post-workout</li>
-          <li>
-            A thoughtfully designed morning to recharge, connect, and glow
-          </li>
-          <li>
-            Fun goodie bags curated by our amazing brand partners, just for you!
-          </li>
-        </ul>
-        <a href="/userDetail2" style={{ textDecoration: "none" }}>
+        <a href="/yoga-event" style={{ textDecoration: "none" }}>
           <button className="info-btn">Join the Waitlist</button>
         </a>
       </section>
