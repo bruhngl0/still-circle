@@ -56,7 +56,7 @@ const Info = () => {
         <h3>Event Details</h3>
         <div className="venue-details">
           <p>
-            <strong>Date:</strong> Sunday, 29nd June 2025
+            <strong>Date:</strong> Sunday, 29th June 2025
           </p>
           <p>
             <strong>Time: -</strong> 6:00 PM to 8:30 PM
@@ -70,6 +70,20 @@ const Info = () => {
           </p>
         </div>
         <br /> <br />
+        <p>Whats included:</p>
+        <div className="venue-details">
+          <ul>
+            <li>A 60-minute guided candlelit yoga session.</li>
+            <li>Live sitar performance accompanying the flow.</li>
+            <li>A wholesome meal post-session.</li>
+            <li>Goodie bags from our brand partners.</li>
+            <li>
+              {" "}
+              An experience that activates all five senses, from aromatherapy to
+              soundscapes.{" "}
+            </li>
+          </ul>
+        </div>
         <a href="/yoga-event" style={{ textDecoration: "none" }}>
           <button className="info-btn">Join the Waitlist</button>
         </a>

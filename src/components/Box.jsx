@@ -1,4 +1,4 @@
-import "../styles/box.css";
+import "../styles/box.scss";
 
 const Box = () => {
   return (

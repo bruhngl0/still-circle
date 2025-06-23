@@ -35,7 +35,7 @@ const Video = () => {
         {/* Overlay Text */}
 
         <div className="video-bg">
-          <img src="yoga.png" />
+          <img src="sensory.png" />
         </div>
 
         <div className="overlay-text">
