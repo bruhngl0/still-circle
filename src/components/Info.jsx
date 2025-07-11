@@ -65,7 +65,7 @@ const Info = () => {
           </p>
 
           <p>
-            <strong>Price:</strong> ₹4999
+            <strong>Price:</strong> ₹4,999
           </p>
         </div>
         <br /> <br />
