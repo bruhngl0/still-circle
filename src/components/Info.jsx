@@ -65,7 +65,7 @@ const Info = () => {
           </p>
 
           <p>
-            <strong>Price:</strong> ₹5000 -/
+            <strong>Price:</strong> ₹4999
           </p>
         </div>
         <br /> <br />
@@ -82,6 +82,12 @@ const Info = () => {
             </li>
             <li>
               A mindful journey designed to restore, recharge, and reconnect.
+            </li>
+
+            <li>Goodie bags from our incredible brand partners.</li>
+            <li>
+              End your experience with intentional journalling, a quiet moment
+              to reflect, write and reset.
             </li>
           </ul>
         </div>

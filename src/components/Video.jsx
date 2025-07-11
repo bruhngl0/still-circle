@@ -35,14 +35,14 @@ const Video = () => {
         {/* Overlay Text */}
 
         <div className="video-bg">
-          <img src="pops.jpeg" />
+          <img src="98.png" />
         </div>
 
         <div className="overlay-text">
           <p>
-            <span>A SPACE TO SLOW DOWN </span>
-            <span>TO RE-CONNECT WITHIN</span>
-            <span>& RE-DISCOVER YOURSELF</span>
+            <span>A SPACE TO SLOW DOWN, </span>
+            <span>RECONNECT & RE-DISCOVER YOURSELF.</span>
+            <span></span>
           </p>
         </div>
         {/* Call to Action Button */}
