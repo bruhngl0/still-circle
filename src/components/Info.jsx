@@ -48,13 +48,13 @@ const Info = () => {
 
       {/* Event Details Section */}
       <section className="event-details">
-        <h3>Event Details</h3>
+        <h3>Event Details:</h3>
         <div className="venue-details">
           <p>
             <strong>Date:</strong> Sunday, 20th July 2025
           </p>
           <p>
-            <strong>Time: -</strong> 5:30 PM to 7:00 PM
+            <strong>Time:</strong> 5:30 PM to 7:00 PM
           </p>
 
           <p>
