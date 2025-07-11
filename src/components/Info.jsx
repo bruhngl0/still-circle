@@ -34,20 +34,15 @@ const Info = () => {
     <div className="experience-page">
       {/* Floating Sound Immersion Section */}
       <section className="experience-section">
-        <h2 className="experience-title">Sensory Circle </h2>
+        <h2 className="experience-title">Floating Sound Immersion </h2>
 
         <p className="experience-description">
-          A quiet journey through the senses. <br />
-          An experience designed to awaken what often goes unnoticed.
+          Let your body float. Let the sound guide your breath and mind.
           <br />
-          Guided by light, scent, sound, and movement, this is yoga that goes
-          beyond the physical.
+          This practice blends water and vibration to ease tension, calm the
+          nervous system, and bring you back to yourself.
           <br />
-          Held in the peaceful surrounds of Sabha, Sensory Circle invites you to
-          tune in, feel more, and move with quiet intention.
-          <br />
-          Leave with a softer body, a quieter mind, and a sense that something
-          has gently shifted.
+          It’s not just a session, it’s a quiet reset, held in stillness.
         </p>
       </section>
 
@@ -56,35 +51,41 @@ const Info = () => {
         <h3>Event Details</h3>
         <div className="venue-details">
           <p>
-            <strong>Date:</strong> Sunday, 29th June 2025
+            <strong>Date:</strong> Sunday, 20th July 2025
           </p>
           <p>
-            <strong>Time: -</strong> 6:00 PM to 8:30 PM
+            <strong>Time: -</strong> 5:30 PM to 7:00 PM
           </p>
 
           <p>
-            <strong>Venue:</strong> Sabha, Bangalore.
+            <strong>Venue:</strong> Conrad, Bengaluru.
           </p>
           <p>
-            <strong>Price:</strong> ₹3,500 per person
+            <strong>Instructor:</strong> Iti Jain
+          </p>
+
+          <p>
+            <strong>Price:</strong> ₹5000 -/
           </p>
         </div>
         <br /> <br />
         <p>Whats included:</p>
         <div className="venue-details">
           <ul>
-            <li>A 60-minute guided candlelit yoga session.</li>
-            <li>Live sitar performance accompanying the flow.</li>
-            <li>A wholesome meal post-session.</li>
-            <li>Goodie bags from our brand partners.</li>
             <li>
-              {" "}
-              An experience that activates all five senses, from aromatherapy to
-              soundscapes.{" "}
+              A 15-minute guided introduction to the practice, its benefits, and
+              a short breathwork session.
+            </li>
+            <li>45-minute floating sound healing session in the pool.</li>
+            <li>
+              A thoughtful high tea with a spread of fresh, vegetarian bites.
+            </li>
+            <li>
+              A mindful journey designed to restore, recharge, and reconnect.
             </li>
           </ul>
         </div>
-        <a href="/yoga-event" style={{ textDecoration: "none" }}>
+        <a href="/userDetail" style={{ textDecoration: "none" }}>
           <button className="info-btn">Join the Waitlist</button>
         </a>
       </section>

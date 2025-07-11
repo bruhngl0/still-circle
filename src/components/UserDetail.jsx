@@ -35,6 +35,12 @@ const UserDetail = () => {
         ...prevData,
         [name]: null, // If value is empty, reset to null
       }));
+    } else if (name === "phoneNumber") {
+      const digitsOnly = value.replace(/\D/g, "");
+      setFormData((prevData) => ({
+        ...prevData,
+        [name]: digitsOnly,
+      }));
     } else {
       setFormData((prevData) => ({
         ...prevData,
@@ -49,7 +55,7 @@ const UserDetail = () => {
 
     try {
       const response = await fetch(
-        "https://stillcircle.adityashrm500.workers.dev/api/v1/userDetail",
+        "https://stillcircle.adityashrm500.workers.dev/api/v1/userDetails",
         {
           method: "POST",
           headers: {
@@ -216,13 +222,7 @@ const UserDetail = () => {
               <option value="" disabled hidden>
                 Preferred session time?
               </option>
-              <option value="Sunset" disabled>
-                Sunset Session - (Sold - Out)
-              </option>
-              <option value="Night">
-                {" "}
-                Stargazing Session - (7:30 PM - 9:30 PM){" "}
-              </option>
+              <option value="Sunset">Sunset Session</option>
             </select>
           </div>
 
