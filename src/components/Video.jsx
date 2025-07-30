@@ -35,13 +35,21 @@ const Video = () => {
         {/* Overlay Text */}
 
         <div className="video-bg">
-          <img src="98.png" />
+          <video
+            className="vv"
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="auto"
+            src="pp.mp4"
+          />
         </div>
 
         <div className="overlay-text">
           <p>
-            <span>A SPACE TO SLOW DOWN, </span>
-            <span>RECONNECT & RE-DISCOVER YOURSELF.</span>
+            <span> </span>
+            <span></span>
             <span></span>
           </p>
         </div>

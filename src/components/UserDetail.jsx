@@ -55,7 +55,7 @@ const UserDetail = () => {
 
     try {
       const response = await fetch(
-        "https://stillcircle.adityashrm500.workers.dev/api/v1/userDetails",
+        "https://stillcircle.adityashrm500.workers.dev/api/v1/third-house",
         {
           method: "POST",
           headers: {
@@ -131,7 +131,7 @@ const UserDetail = () => {
             />
           </div>
 
-          <div className="form-group">
+          {/* <div className="form-group">
             <input
               type="number"
               id="age"
@@ -252,7 +252,7 @@ const UserDetail = () => {
               value={formData.instagramHandle}
               onChange={handleInputChange}
             />
-          </div>
+          </div> */}
           <div className="user-btn">
             <button type="submit" className="submit-btn" disabled={loading}>
               {loading ? "Submitting..." : "SUBMIT"}

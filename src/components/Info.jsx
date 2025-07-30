@@ -34,26 +34,27 @@ const Info = () => {
     <div className="experience-page">
       {/* Floating Sound Immersion Section */}
       <section className="experience-section">
-        <h2 className="experience-title">Floating Sound Immersion </h2>
+        <h2 className="experience-title">The Third House</h2>
 
         <p className="experience-description">
-          Let your body float. Let the sound guide your breath and mind.
+          The Third House is designed to bring all things wellness into one
+          space.
           <br />
-          This practice blends water and vibration to ease tension, calm the
-          nervous system, and bring you back to yourself.
-          <br />
-          It’s not just a session, it’s a quiet reset, held in stillness.
+          Guided sessions, rituals, and brands, all in one flow.
+          <br />A curated space to move, feel, and discover. Wellness as you’ve
+          never experienced it before.
         </p>
       </section>
 
       {/* Event Details Section */}
       <section className="event-details">
-        <h3>Event Details:</h3>
+        <h3></h3>
         <div className="venue-details">
           <p>
-            <strong>Date:</strong> Sunday, 20th July 2025
+            More details out soon — join the waitlist now to get first
+            preference.
           </p>
-          <p>
+          {/* <p>
             <strong>Time:</strong> 5:30 PM to 7:00 PM
           </p>
 
@@ -66,7 +67,7 @@ const Info = () => {
 
           <p>
             <strong>Price:</strong> ₹4,999
-          </p>
+          </p> 
         </div>
         <br /> <br />
         <p>Whats included:</p>
@@ -89,7 +90,7 @@ const Info = () => {
               End your experience with intentional journalling, a quiet moment
               to reflect, write and reset.
             </li>
-          </ul>
+          </ul> */}
         </div>
         <a href="/userDetail" style={{ textDecoration: "none" }}>
           <button className="info-btn">Join the Waitlist</button>
