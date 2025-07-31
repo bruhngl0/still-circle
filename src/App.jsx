@@ -7,6 +7,7 @@ import UserDetail from "./components/UserDetail";
 import Thankyou from "./components/Thankyou";
 import Pilates from "./components/Pilates";
 import Yoga from "./components/Yoga";
+import ThirdHouse from "./components/Thirdhouse";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/contact" element={<Thankyou />} />
         <Route path="/userDetail2" element={<Pilates />} />
         <Route path="/yoga-event" element={<Yoga />} />
+        <Route path="/third-house" element={<ThirdHouse />} />
         {/* Add more routes as needed */}
       </Routes>
     </BrowserRouter>

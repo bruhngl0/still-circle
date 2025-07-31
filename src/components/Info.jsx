@@ -48,51 +48,66 @@ const Info = () => {
 
       {/* Event Details Section */}
       <section className="event-details">
-        <h3></h3>
+        <h3>Event Details:</h3>
         <div className="venue-details">
           <p>
-            More details out soon — join the waitlist now to get first
-            preference.
+            <strong>Date:</strong> 17th August, 2025
           </p>
-          {/* <p>
-            <strong>Time:</strong> 5:30 PM to 7:00 PM
+          <p>
+            <strong>Time:</strong> 8:00 PM to 4:30 PM
           </p>
 
           <p>
-            <strong>Venue:</strong> Conrad, Bengaluru.
-          </p>
-          <p>
-            <strong>Instructor:</strong> Iti Jain
+            <strong>Venue:</strong> Area 83, Bengaluru.
           </p>
 
           <p>
-            <strong>Price:</strong> ₹4,999
-          </p> 
+            <strong>Price:</strong> ₹3,500 per person
+          </p>
         </div>
         <br /> <br />
-        <p>Whats included:</p>
+        <p>What you can expect:</p>
         <div className="venue-details">
           <ul>
             <li>
-              A 15-minute guided introduction to the practice, its benefits, and
-              a short breathwork session.
+              Access to all sessions at The Movement House, Yoga, Sculpt Workout
+              and Sound Healing.
             </li>
-            <li>45-minute floating sound healing session in the pool.</li>
+            <li> Guided 5KM mountain walk through scenic trails.</li>
             <li>
-              A thoughtful high tea with a spread of fresh, vegetarian bites.
+              Access to The Eat Good House: Smoothie bowls, matcha, and healthy
+              bites available for purchase.
             </li>
             <li>
-              A mindful journey designed to restore, recharge, and reconnect.
+              Access to The Recovery House: Explore recovery tools and tech,
+              with select complimentary experiences.
             </li>
 
-            <li>Goodie bags from our incredible brand partners.</li>
             <li>
-              End your experience with intentional journalling, a quiet moment
-              to reflect, write and reset.
+              Access to The Hydration House: Stay refreshed with complimentary
+              coconut water, electrolytes, and more!
             </li>
-          </ul> */}
+            <li>
+              Access to The Play House: Journaling, pottery, bouquet making,
+              perfume blending experiences and complimentary tote bag printing.
+            </li>
+
+            <li>
+              Access to The Brand Marketplace, explore interactive booths and
+              sample wellness products.
+            </li>
+
+            <li>
+              A Goodie Bag filled with skincare, nutrition, and wellness
+              essentials!
+            </li>
+            <li>
+              All event essentials covered: Restrooms, shaded lounges, water
+              stations, changing areas, and on-ground support.
+            </li>
+          </ul>
         </div>
-        <a href="/userDetail" style={{ textDecoration: "none" }}>
+        <a href="/third-house" style={{ textDecoration: "none" }}>
           <button className="info-btn">Join the Waitlist</button>
         </a>
       </section>
