@@ -107,7 +107,7 @@ const Info = () => {
             </li>
           </ul>
         </div>
-        <a href="/third-house" style={{ textDecoration: "none" }}>
+        <a href="/userDetail" style={{ textDecoration: "none" }}>
           <button className="info-btn">Join the Waitlist</button>
         </a>
       </section>
