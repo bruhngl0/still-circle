@@ -51,6 +51,13 @@ const Info = () => {
         <h3>Event Details:</h3>
         <div className="venue-details">
           <p>
+            The Third House is designed to bring all things wellness into one
+            space. Guided sessions, rituals, and brands, all in one flow. A
+            curated space to move, feel, and discover. Wellness as you’ve never
+            experienced it before. More details out soon — join the waitlist now
+            to get first preference.
+          </p>
+          {/*         <p>
             <strong>Date:</strong> 17th August, 2025
           </p>
           <p>
@@ -105,7 +112,7 @@ const Info = () => {
               All event essentials covered: Restrooms, shaded lounges, water
               stations, changing areas, and on-ground support.
             </li>
-          </ul>
+          </ul> */}
         </div>
         <a href="/userDetail" style={{ textDecoration: "none" }}>
           <button className="info-btn">Join the Waitlist</button>
