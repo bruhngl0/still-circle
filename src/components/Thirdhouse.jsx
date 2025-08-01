@@ -149,7 +149,7 @@ const ThirdHouse = () => {
               required
             >
               <option value="" disabled hidden>
-                Yoga (Core Session 1: Choose your preferred slot)
+                Yoga (Core Session 1: Choose preferred slot)
               </option>
               <option value="SLOT_11_00_TO_11_45">Slot 1 (11:00-11:45)</option>
               <option value="SLOT_15_00_TO_15_45">Slot 2 (3:00 - 3:45)</option>
@@ -165,7 +165,7 @@ const ThirdHouse = () => {
               required
             >
               <option value="" disabled hidden>
-                Sculpt Workout (Core Session 2: Choose your preferred slot)
+                Sculpt Workout (Core Session 2: Choose preferred slot)
               </option>
               <option value="SLOT_12_00_TO_12_45">Slot 1 (12:00-12:45)</option>
               <option value="SLOT_14_00_TO_14_45">Slot 2 (2:00 - 2:45)</option>
@@ -181,7 +181,7 @@ const ThirdHouse = () => {
               required
             >
               <option value="" disabled hidden>
-                Sound Healing (Core Session 3: Choose your preferred slot)
+                Sound Healing (Core Session 3: Choose preferred slot)
               </option>
               <option value="SLOT_11_00_TO_11_45">Slot 1 (11:00-11:45)</option>
               <option value="SLOT_15_00_TO_15_45">Slot 2 (3:00 - 3:45)</option>
