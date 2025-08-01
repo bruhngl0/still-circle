@@ -54,7 +54,7 @@ const Info = () => {
             <strong>Date:</strong> 17th August, 2025
           </p>
           <p>
-            <strong>Time:</strong> 8:00 PM to 4:30 PM
+            <strong>Time:</strong> 8:00 AM to 4:30 PM
           </p>
 
           <p>
@@ -62,7 +62,7 @@ const Info = () => {
           </p>
 
           <p>
-            <strong>Price:</strong> ₹3,500 per person
+            <strong>Price:</strong> ₹3,500 + GST
           </p>
         </div>
         <br /> <br />
@@ -70,36 +70,36 @@ const Info = () => {
         <div className="venue-details">
           <ul>
             <li>
-              Access to all sessions at The Movement House, Yoga, Sculpt Workout
-              and Sound Healing.
+              Access to all sessions at The Movement House: Yoga, Sculpt
+              Workout, Mountain Trail Run and Sound Healing.
             </li>
-            <li> Guided 5KM mountain walk through scenic trails.</li>
+            <li>Guided 5KM mountain walk through scenic trails.</li>
             <li>
-              ccess to The Eat Good House: Smoothie bowls, matcha, and healthy
-              bites available for purchase by Copper & Clove and Purpose.
+              Access to The Recovery House: Complimentary experiences by
+              Wellness & Co. and ARC.
             </li>
             <li>
-              Access to The Recovery House: Explore recovery tools and tech,
-              with select complimentary experiences.
+              ⁠Access to The Hydration House: Complimentary coconut water by
+              Mococos and electrolytes by Aquatine.
             </li>
 
-            <li>
-              Access to The Hydration House: Stay refreshed with complimentary
-              coconut water, electrolytes, and more!
-            </li>
             <li>
               Access to The Play House: Journaling, pottery, bouquet making,
-              perfume blending experiences and complimentary tote bag printing.
+              perfume blending experiences, and complimentary tote bag printing.
+            </li>
+            <li>
+              Access to The Eat Good House: Smoothie bowls, matcha, and healthy
+              bites available for purchase by Copper & Clove and Purpose.
             </li>
 
             <li>
-              Access to The Brand Marketplace, explore interactive booths and
+              Access to The Brand Marketplace: Explore interactive booths and
               sample wellness products.
             </li>
 
             <li>
-              A Goodie Bag filled with skincare, nutrition, and wellness
-              essentials!
+              A goodie bag filled with skincare, nutrition, and wellness
+              essentials.
             </li>
             <li>
               All event essentials covered: Restrooms, shaded lounges, water

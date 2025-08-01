@@ -9,8 +9,9 @@ const ThirdHouse = () => {
     fullName: "",
     email: "",
     phoneNumber: "",
-    coreSession: "",
-    coreSessionSlot: "",
+    yoga: "",
+    scultWorkout: "",
+    soundHealing: "",
     hasPastRetreat: "",
     lookingForwardTo: "",
     wantsFutureUpdates: "",
@@ -94,7 +95,7 @@ const ThirdHouse = () => {
             <img src="logo31.png" className="detail-logo" />
           </div>
           <div className="detail-text">
-            <p className="detail1-text1">Join Waitlist.</p>
+            <p className="detail1-text1">Join the Waitlist.</p>
             <p className="detail2-text2">
               Please tell us a bit about yourself so we can review your request
               to join the waitlist.
@@ -141,44 +142,49 @@ const ThirdHouse = () => {
 
           <div className="form-group">
             <select
-              id="coreSession"
-              name="coreSession"
-              value={formData.coreSession}
+              id="yoga"
+              name="yoga"
+              value={formData.yoga}
               onChange={handleInputChange}
               required
             >
               <option value="" disabled hidden>
-                Select your preferred core session
+                Yoga (Core Session 1: Choose your preferred slot)
               </option>
-              <option value="YOGA">Yoga</option>
-              <option value="SCULPT_WORKOUT">Sculpt Workout</option>
-              <option value="SOUND_HEALING">Sound Healing</option>
+              <option value="SLOT_11_00_TO_11_45">Slot 1 (11:00-11:45)</option>
+              <option value="SLOT_15_00_TO_15_45">Slot 2 (3:00 - 3:45)</option>
             </select>
           </div>
 
           <div className="form-group">
             <select
-              id="coreSessionSlot"
-              name="coreSessionSlot"
-              value={formData.coreSessionSlot}
+              id="scultWorkout"
+              name="scultWorkout"
+              value={formData.scultWorkout}
               onChange={handleInputChange}
               required
             >
               <option value="" disabled hidden>
-                Select your preferred time slot
+                sculpt Workout (Core Session 2: Choose your preferred slot)
               </option>
-              <option value="SLOT_11_00_TO_11_45">
-                11:00 AM - 11:45 AM (yoga/sound healing)
+              <option value="SLOT_12_00_TO_12_45">Slot 1 (12:00-12:45)</option>
+              <option value="SLOT_14_00_TO_14_45">Slot 2 (2:00 - 2:45)</option>
+            </select>
+          </div>
+
+          <div className="form-group">
+            <select
+              id="soundHealing"
+              name="soundHealing"
+              value={formData.soundHealing}
+              onChange={handleInputChange}
+              required
+            >
+              <option value="" disabled hidden>
+                Sound Healing (Core Session 3: Choose your preferred slot)
               </option>
-              <option value="SLOT_12_00_TO_12_45">
-                12:00 PM - 12:45 PM (sculpt workout)
-              </option>
-              <option value="SLOT_14_00_TO_14_45">
-                2:00 PM - 2:45 PM (sculpt workout)
-              </option>
-              <option value="SLOT_15_00_TO_15_45">
-                3:00 PM - 3:45 PM (yoga/sound healing)
-              </option>
+              <option value="SLOT_11_00_TO_11_45">Slot 1 (11:00-11:45)</option>
+              <option value="SLOT_15_00_TO_15_45">Slot 2 (3:00 - 3:45)</option>
             </select>
           </div>
 
@@ -191,7 +197,7 @@ const ThirdHouse = () => {
               required
             >
               <option value="" disabled hidden>
-                Have you attended a past retreat with us?
+                Have you attended a past retreat?
               </option>
               <option value="YES">Yes</option>
               <option value="NO">No</option>
@@ -260,7 +266,7 @@ const ThirdHouse = () => {
               required
             >
               <option value="" disabled hidden>
-                Would you like to join the mountain walk?
+                Would you like to join the mountain trail run?
               </option>
               <option value="YES">Yes</option>
               <option value="NO">No</option>
