@@ -165,7 +165,7 @@ const ThirdHouse = () => {
               required
             >
               <option value="" disabled hidden>
-                sculpt Workout (Core Session 2: Choose your preferred slot)
+                Sculpt Workout (Core Session 2: Choose your preferred slot)
               </option>
               <option value="SLOT_12_00_TO_12_45">Slot 1 (12:00-12:45)</option>
               <option value="SLOT_14_00_TO_14_45">Slot 2 (2:00 - 2:45)</option>
@@ -197,7 +197,7 @@ const ThirdHouse = () => {
               required
             >
               <option value="" disabled hidden>
-                Have you attended a past retreat?
+                Have you attended a wellness festival in the past?
               </option>
               <option value="YES">Yes</option>
               <option value="NO">No</option>
