@@ -17,6 +17,7 @@ const ThirdHouse = () => {
     heardFrom: "",
     heardFromOther: "",
     joinMountainWalk: "",
+    instagram: "",
   });
 
   const [loading, setLoading] = useState(false);
@@ -280,6 +281,18 @@ const ThirdHouse = () => {
               <option value="YES">Yes</option>
               <option value="NO">No</option>
             </select>
+          </div>
+
+          <div className="form-group">
+            <input
+              type="text"
+              id="instagram"
+              name="instagram"
+              value={formData.instagram}
+              onChange={handleInputChange}
+              placeholder="Instagram handle/LinkedIn"
+              required
+            />
           </div>
 
           <div className="user-btn">
