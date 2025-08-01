@@ -48,12 +48,7 @@ const Info = () => {
 
       <section className="event-details">
         <h3>Event Details:</h3>
-        <p>
-          The Third House is designed to bring all things wellness into one
-          space. Guided sessions, rituals, and brands, all in one flow. A
-          curated space to move, feel, and discover. Wellness as you’ve never
-          experienced it before.
-        </p>
+        <p></p>
         <div className="venue-details">
           <p>
             <strong>Date:</strong> 17th August, 2025
