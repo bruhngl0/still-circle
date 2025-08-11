@@ -19,7 +19,7 @@ const formatDateTime = (iso) => {
 const events = [
   {
     id: "1",
-    posterUrl: "../../public/artthird.jpg",
+    posterUrl: "artthird.jpg",
     dateISO: "2025-08-17T08:00:00+05:30",
     title: "The Third House",
     venue: "Area 83, Bengaluru",
@@ -29,7 +29,7 @@ const events = [
   {
     id: "2",
     dateISO: "2025-08-15T10:00:00+05:30",
-    posterUrl: "../../public/vangogh.jpg",
+    posterUrl: "vangogh.jpg",
     title: "The Starry Strech",
     venue: "Bhartiya Mall of Bengaluru",
     badge: "15th August, 2025",
