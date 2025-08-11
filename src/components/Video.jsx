@@ -42,25 +42,25 @@ const Video = () => {
             loop
             playsInline
             preload="auto"
-            src="pp.mp4"
+            src="mainvid.mp4"
           />
         </div>
 
-        <div className="overlay-text">
+        {/* <div className="overlay-text">
           <p>
             <span> </span>
             <span></span>
             <span></span>
           </p>
-        </div>
+        </div>  */}
         {/* Call to Action Button */}
 
-        <Box />
         <div className="icon-main">
           <img
             src="sc.png"
             style={{
               width: "40px",
+              marginTop: "2rem",
             }}
           />
         </div>

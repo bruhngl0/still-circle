@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import EventList from "./EventList";
 import { gsap } from "gsap";
 import "../styles/info.css";
 
@@ -34,19 +35,19 @@ const Info = () => {
     <div className="experience-page">
       {/* Floating Sound Immersion Section */}
       <section className="experience-section">
-        <h2 className="experience-title">The Third House</h2>
+        <h2 className="experience-title">The Still Circle</h2>
 
         <p className="experience-description">
-          The Third House is designed to bring all things wellness into one
-          space.
+          The Still Circle is a premium wellness platform that curates deeply
+          immersive experiences,
           <br />
-          Guided sessions, rituals, and brands, all in one flow.
-          <br />A curated space to move, feel, and discover. Wellness as you’ve
-          never experienced it before.
+          designed to help people slow down, reconnect with themselves,
+          <br />
+          and find stillness in a fast-moving world.
         </p>
       </section>
-
-      <section className="event-details">
+      <EventList />
+      {/*  <section className="event-details">
         <h3>Event Details:</h3>
         <p></p>
         <div className="venue-details">
@@ -110,7 +111,7 @@ const Info = () => {
         <a href="/third-house" style={{ textDecoration: "none" }}>
           <button className="info-btn">Join the Waitlist</button>
         </a>
-      </section>
+      </section> */}
     </div>
   );
 };
