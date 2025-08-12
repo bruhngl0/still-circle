@@ -167,7 +167,7 @@ const ThirdHouse = () => {
               <option value="" disabled hidden>
                 Sculpt Workout (Session 2: Choose preferred slot)
               </option>
-              <option value="SLOT_12_00_TO_12_45">Slot 1 (12:00-12:45)</option>
+              <option value="SLOT_12_00_T0_12_45">Slot 1 (12:00-12:45)</option>
               <option value="SLOT_14_00_TO_14_45">Slot 2 (2:00 - 2:45)</option>
             </select>
           </div>
