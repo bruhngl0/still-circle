@@ -7,6 +7,7 @@ const events = [
     posterUrl: "artthird.jpg",
     date: "Sunday, Aug 17, 8:00 am",
     title: "The Third House",
+    price: "₹3500 + GST",
     venue: "Area 83, Bengaluru",
     badge: "17th August, 2025",
     lumaLink: " https://lu.ma/famtq4qz", // Luma link
@@ -15,7 +16,8 @@ const events = [
     id: "2",
     posterUrl: "vangogh.jpg",
     date: " Friday, Aug 15, 10:00 am",
-    title: "The Starry Strech",
+    title: "The Starry Stretch",
+    price: "₹2999 + GST",
     venue: "Bhartiya Mall of Bengaluru",
     badge: "15th August, 2025",
     lumaLink: "https://lu.ma/hp4qlghm",
@@ -38,9 +40,11 @@ const EventCard = ({ data }) => {
         )}
         <div className="meta__when">Date: {data.date}</div>
         <div className="meta__venue">Venue: {data.venue}</div>
+        <div className="meta__price">Price: {data.price}</div>
         {data.priceLabel && (
           <div className="meta__price">{data.priceLabel}</div>
         )}
+
         <div className="div-card-btn">
           <a
             href={data.lumaLink}
