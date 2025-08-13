@@ -1,39 +1,24 @@
 import React from "react";
 import "../styles/eventlist.scss";
-import { Link } from "react-router-dom";
-
-const formatDateTime = (iso) => {
-  const d = new Date(iso);
-  const day = d.toLocaleDateString(undefined, { weekday: "short" });
-  const dd = d.toLocaleDateString(undefined, {
-    day: "2-digit",
-    month: "short",
-  });
-  const t = d
-    .toLocaleTimeString(undefined, { hour: "numeric", minute: "2-digit" })
-    .toLowerCase();
-  const time = t.replace(":00", "");
-  return `${day}, ${dd}, ${time}`;
-};
 
 const events = [
   {
     id: "1",
     posterUrl: "artthird.jpg",
-    dateISO: "2025-08-17T08:00:00+05:30",
+    date: "Sunday, Aug 17, 8:00 am",
     title: "The Third House",
     venue: "Area 83, Bengaluru",
     badge: "17th August, 2025",
-    path: "/third-house1",
+    lumaLink: " https://lu.ma/famtq4qz", // Luma link
   },
   {
     id: "2",
-    dateISO: "2025-08-15T10:00:00+05:30",
     posterUrl: "vangogh.jpg",
+    date: " Friday, Aug 15, 10:00 am",
     title: "The Starry Strech",
     venue: "Bhartiya Mall of Bengaluru",
     badge: "15th August, 2025",
-    path: "/vangogh",
+    lumaLink: "https://lu.ma/hp4qlghm",
   },
 ];
 
@@ -43,24 +28,28 @@ const EventCard = ({ data }) => {
       <div className="poster">
         <img src={data.posterUrl} alt={data.title} />
         <div className="poster__fade" />
-        {data.badge ? (
-          <span className="chip chip--accent">{data.badge}</span>
-        ) : null}
+        {data.badge && <span className="chip chip--accent">{data.badge}</span>}
       </div>
 
       <div className="meta">
         <h3 className="meta__title">{data.title}</h3>
-        {data.presenters ? (
+        {data.presenters && (
           <div className="meta__presenters">{data.presenters}</div>
-        ) : null}
-        <div className="meta__when">Date: {formatDateTime(data.dateISO)}</div>
-
+        )}
+        <div className="meta__when">Date: {data.date}</div>
         <div className="meta__venue">Venue: {data.venue}</div>
-        <div className="meta__price">{data.priceLabel}</div>
+        {data.priceLabel && (
+          <div className="meta__price">{data.priceLabel}</div>
+        )}
         <div className="div-card-btn">
-          <Link to={data.path} className="card-btn">
+          <a
+            href={data.lumaLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="card-btn"
+          >
             Join The Waitlist
-          </Link>
+          </a>
         </div>
       </div>
     </div>
