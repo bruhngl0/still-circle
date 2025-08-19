@@ -11,7 +11,7 @@ const events = [
     price: "₹3500 + GST",
     venue: "Area 83, Bengaluru",
     badge: "7th Sept, 2025",
-    lumalink: "https://lu.ma/hxs0gntt",
+    lumaLink: "https://lu.ma/hxs0gntt",
   },
 ];
 
