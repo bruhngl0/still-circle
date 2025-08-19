@@ -5,22 +5,13 @@ const events = [
   {
     id: "1",
     posterUrl: "artthird.jpg",
-    date: "Sunday, Aug 17, 8:00 am",
+    date: "Sunday, 7th September, 2025",
+    time: "8:00 AM to 4:30 PM",
     title: "The Third House",
     price: "₹3500 + GST",
     venue: "Area 83, Bengaluru",
-    badge: "17th August, 2025",
-    lumaLink: " https://lu.ma/famtq4qz", // Luma link
-  },
-  {
-    id: "2",
-    posterUrl: "vangogh.jpg",
-    date: " Friday, Aug 15, 10:00 am",
-    title: "The Starry Stretch",
-    price: "₹2999 + GST",
-    venue: "Bhartiya Mall of Bengaluru",
-    badge: "15th August, 2025",
-    lumaLink: "https://lu.ma/hp4qlghm",
+    badge: "7th Sept, 2025",
+    lumalink: "https://lu.ma/hxs0gntt",
   },
 ];
 
@@ -39,6 +30,8 @@ const EventCard = ({ data }) => {
           <div className="meta__presenters">{data.presenters}</div>
         )}
         <div className="meta__when">Date: {data.date}</div>
+        <div className="meta__venue">Time: {data.time}</div>
+
         <div className="meta__venue">Venue: {data.venue}</div>
         <div className="meta__price">Price: {data.price}</div>
         {data.priceLabel && (
